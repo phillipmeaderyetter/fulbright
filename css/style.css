@@ -1,0 +1,339 @@
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root {
+  --ink:        #0028CC;   /* deep indigo-slate — primary text #1E2A38*/
+  --paper:      #EDEAD9;   /* rice-paper background */
+  --paper-dim:  #E2DDC6;   /* card / panel surface #E2DDC6 */
+  --jade:       #3F6B5C;   /* temple-roof green accent */
+  --stamp-red:  #A63A2C;   /* postal ink */
+  --gold:       #C9A227;   /* seal / accent, used sparingly */
+  --line:       rgba(30,42,56,0.28);
+
+  --font-display: "Fraunces", serif;
+  --font-body:    "Inter", sans-serif;
+  --font-mono:    "IBM Plex Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+code {
+  font-family: var(--font-mono);
+  background: var(--paper-dim);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  padding: 6vh 8vw;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 1.1rem;
+}
+
+.hero-text h1 {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: clamp(3rem, 8vw, 5.6rem);
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  margin: 0 0 1.6rem;
+  color: var(--ink);
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  max-width: 34ch;
+  color: var(--ink);
+  opacity: 0.82;
+  margin: 0 0 2.4rem;
+}
+
+.scroll-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 0.3rem;
+  transition: opacity 0.2s ease;
+}
+.scroll-cue:hover { opacity: 0.6; }
+.scroll-cue svg { animation: bob 2.2s ease-in-out infinite; }
+@keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+
+.hero-mark { flex-shrink: 0; }
+
+.island {
+  position: absolute;
+  right: -6vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(46vw, 620px);
+  color: var(--jade);
+  opacity: 0.08;
+  z-index: 1;
+}
+.island.small {
+  position: static;
+  transform: none;
+  width: 46px;
+  opacity: 0.5;
+  margin: 0 auto 1rem;
+}
+
+/* ============================================================
+   POSTMARK STAMP  (signature element)
+   ============================================================ */
+.postmark {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  flex-shrink: 0;
+}
+
+.postmark-ring {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  outline: 1px solid var(--ink);
+  outline-offset: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--paper);
+  font-family: var(--font-mono);
+  color: var(--ink);
+  position: relative;
+  z-index: 2;
+}
+
+.postmark-top {
+  font-size: 0.55rem;
+  letter-spacing: 0.08em;
+  opacity: 0.75;
+  margin-bottom: 2px;
+}
+.postmark-date {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.postmark-loc {
+  font-size: 0.58rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  max-width: 78px;
+  margin-top: 4px;
+  line-height: 1.25;
+}
+.postmark-year {
+  font-size: 0.6rem;
+  opacity: 0.6;
+  margin-top: 3px;
+}
+
+/* the cancellation ribbon — a few "inked" diagonal strokes,
+   like a real postal cancellation mark grazing the stamp */
+.postmark-cancel {
+  position: absolute;
+  top: 8%;
+  right: -14%;
+  width: 62%;
+  height: 84%;
+  background: repeating-linear-gradient(
+    38deg,
+    var(--stamp-red) 0px,
+    var(--stamp-red) 2px,
+    transparent 2px,
+    transparent 9px
+  );
+  opacity: 0.55;
+  mix-blend-mode: multiply;
+  z-index: 1;
+  border-radius: 40%;
+}
+
+/* ============================================================
+   JOURNAL / TIMELINE
+   ============================================================ */
+.journal {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 8vh 8vw 4vh;
+}
+
+.entries {
+  display: grid;
+  grid-template-columns: 128px 1fr;
+  column-gap: 2.6rem;
+  row-gap: 5.5rem;
+  position: relative;
+}
+
+.journal-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(8vw + 64px);
+  width: 0;
+  border-left: 1.5px dashed var(--line);
+  z-index: 0;
+}
+
+.entry {
+  display: contents;
+}
+
+.entry-marker {
+  position: relative;
+  z-index: 2;
+}
+
+.entry-body {
+  background: var(--paper-dim);
+  border-radius: 4px;
+  padding: 2rem 2.2rem 2.4rem;
+  position: relative;
+}
+
+.entry-body h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin: 0 0 1.2rem;
+  color: var(--ink);
+}
+
+.entry-text p {
+  margin: 0 0 1rem;
+  color: var(--ink);
+  opacity: 0.88;
+}
+.entry-text p:last-child { margin-bottom: 0; }
+
+.entry-photos {
+  display: grid;
+  gap: 0.6rem;
+  margin-bottom: 1.4rem;
+}
+.entry-photos.photos-1 { grid-template-columns: 1fr; max-width: 420px; }
+.entry-photos.photos-2 { grid-template-columns: 1fr 1fr; }
+.entry-photos.photos-3 { grid-template-columns: 1fr 1fr; }
+.entry-photos.photos-3 figure:first-child { grid-column: 1 / -1; }
+
+.entry-photos figure {
+  margin: 0;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+.entry-photos img { width: 100%; height: auto; object-fit: cover; aspect-ratio: 4/3; }
+.entry-photos figcaption {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  opacity: 0.6;
+  padding: 0.5rem 0.6rem;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer {
+  text-align: center;
+  padding: 6vh 8vw 8vh;
+  border-top: 1px solid var(--line);
+}
+.site-footer p {
+  margin: 0.2rem 0;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--ink);
+  opacity: 0.7;
+}
+.footer-note { opacity: 0.5; font-size: 0.75rem; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 760px) {
+  .hero { padding: 8vh 6vw; min-height: auto; }
+  .hero-inner { flex-direction: column; align-items: flex-start; gap: 2.4rem; }
+  .hero-mark { align-self: flex-start; }
+  .island { opacity: 0.06; width: 80vw; right: -20vw; }
+
+  .journal { padding: 6vh 6vw 4vh; }
+  .entries { grid-template-columns: 1fr; row-gap: 3rem; }
+  .journal-line { display: none; }
+  .entry { display: block; }
+  .entry-marker { margin-bottom: 1rem; }
+  .entry-body { padding: 1.6rem 1.4rem 1.8rem; }
+  .entry-photos.photos-2,
+  .entry-photos.photos-3 { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 420px) {
+  .postmark { width: 108px; height: 108px; }
+}
+
+/* keyboard focus visibility */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--jade);
+  outline-offset: 3px;
+}
