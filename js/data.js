@@ -12,6 +12,24 @@
 
 const entries = [
   /* next entry here */
+  
+   {
+    date: "2026-08-20",
+    location: "Hualien City, Taiwan", 
+    title: "Movement 1: Andante",
+    text: "Sorry for the delay! This week will be a twofer, so check back Sunday for more. I write you from my hotel room in Tamsui — 淡水 (dànshuǐ) in Mandarin meaning fresh water, originally called hoba meaning mouth of the river in the language of the Ketagalan people who lived here first -  a coastal district of Taiwan with the most beautiful sunset you'll never see during typhoon season.\n\nLast week in Hualien City, we got a crash course from Fulbright on classroom management and educational methods for teaching English to young speakers of other languages. I packed entirely too much content into my 20-minute demo lesson on English vocabulary for visiting the doctor, and was also advised to speak much slower. Better to hear it now! The returning members of my cohort taught us Arabic (marhaban!), Korean (annyeonghaseyo!), and some reliable games for keeping little ones engaged. These are full days, but fun days. \n\nAfter the day's workshop, us first years can be found spinning our wheels beneath the banyan trees. I'm working on leaning into my turns and increasing my core strength for the dreaded straight line test, where we will be tested on our ability to balance while driving slowly. We must cover a set short distance in at least eight seconds (you read that correctly); at least one person from another site has failed this test this year! \n\nI have also been running a little, biking a little, and getting lost a lot. So far, the surest sign that I am headed the wrong way is one or more dogs chasing me and barking. When I am not lost, though, I am finding things like the indigenous agricultural center, swarms of dragonflies, and my friends' apartments for dinner. So most of the time, I feel like I am in the right place. \n\nThis week, we got our school placements and headed to Taipei once again. I have waited, and I have seen. For now, I will share that I am very excited about visiting my school, meeting my kids, and spending the year with this cohort. I'm sure you know all that by now. \n\np.s. I bought a fish from the vendor so I could take the photo",
+    fontSize: "1rem", /* default; scalar value */
+    photos: [
+      { src: "images/8-20/selife.jpeg", caption: "Someone asked me to include more photos of myself. This is me at 明恥 Míngchǐ, the elementary school where Hualien County orientation is held" },
+      { src: "images/8-20/dogpath.jpeg", caption: "An indicator that I've gone the wrong way" },
+      { src: "images/8-20/bridgelights.jpeg", caption: "Had to carry the bike to get here, and a snake fell out of a tree behind me" },
+      { src: "images/8-20/banyan.JPG", caption: "Banyan trees line the strip of concrete where we practice on a rented 115cc scooter"" },
+      { src: "images/8-20/scooter.JPG", caption: "The scooter in question" },
+      { src: "images/8-20/marketfish.JPG", caption: "I've been eyeing these, and they've been eyeing me" },
+      
+    ]
+  },
+  
     {
     date: "2026-08-10",
     location: "Hualien City, Taiwan", 
@@ -19,7 +37,7 @@ const entries = [
     text: "I took my eyes off the mountains a few times during my first week, but only to focus on my plate. Above are a few less-than-scenic snapshots of indulgence. Through food, I experience the legacies of repeated colonizations of the island (hello, Japanese curry), periods of migration, and the indigenous cultures which have resisted subjugation for hundreds of years (hello, bamboo rice from the Atayal, Truku, Amis, and others). It was relatively recently that the central government transitioned from formal suppression of indigenous culture to de jure preservation of indigenous culture.\n\nHonorable mentions not pictured: my new old bike (not food), Malayan night heron (blurry photo), karaoke night (videos tbd), and friend I made on a run (no phone). Finally, Owen taught me 塞翁失馬 (sàiwēngshīmǎ), which means many things. What at first appears to be bad fortune may be surprisingly good, or the opposite may be true; I am taking it to mean wait and see. I have so much to learn, still.",    
     fontSize: "1rem", /* default; scalar value */
     photos: [
-      { src: "images/8-10/curry.JPG", caption: "Japanese fish fillet curry from Curry Man: light and crispy, a little sweet" },
+      { src: "images/8-10/curry.JPG", caption: "Japanese fish filet curry from Curry Man: light and crispy, a little sweet" },
       { src: "images/8-10/danbing.jpeg", caption: "蛋餅 dànbǐng, or Chinese Omelette, most of my breakfasts so far, plus my food vocab journal" },
       { src: "images/8-10/hangingmeat.jpeg", caption: "The kind man let me try one of everything, so I bought one of everything" },
       { src: "images/8-10/threecupschx.JPG", caption: "A common dine-in, fast-casual cafeteria serving homestyle Taiwanese classics like 三杯雞 sānbēijī" },
@@ -33,7 +51,7 @@ const entries = [
     {
     date: "2026-08-1",
     location: "Taipei, Taiwan",
-    title: "Touchdown: 15 hours ahead",
+    title: "Taipei Main Station: 15 hours ahead",
     text: "After a short 13-hour flight, I am one of the first to arrive in Taipei (around 4:00 AM). We steadily fill the hall over two hours. My cohort (4 of the 8 of us) send our suitcases in the mail and take two trains for a total of four hours to reach Hualien City. <br><br> From the moment our train turned down the coast, I haven't taken my eyes off these mountains. Immediate, insistent, these loom in the periphery even when I face the ocean. These hum steadily underneath the percussive life of a small city. Steel on the stove, puttering scooters, curious birdsong, and these mountains.",
     fontSize: "1rem", /* default; scalar value */
     photos: [
