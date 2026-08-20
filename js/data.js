@@ -23,7 +23,7 @@ const entries = [
       { src: "images/8-20/selife.jpeg", caption: "Someone asked me to include more photos of myself. This is me at 明恥 Míngchǐ, the elementary school where Hualien County orientation is held" },
       { src: "images/8-20/dogpath.jpeg", caption: "An indicator that I've gone the wrong way" },
       { src: "images/8-20/bridgelights.jpeg", caption: "Had to carry the bike to get here, and a snake fell out of a tree behind me" },
-      { src: "images/8-20/banyan.JPG", caption: "Banyan trees line the strip of concrete where we practice on a rented 115cc scooter"" },
+      { src: "images/8-20/banyan.JPG", caption: "Banyan trees line the strip of concrete where we practice on a rented 115cc scooter" },
       { src: "images/8-20/scooter.JPG", caption: "The scooter in question" },
       { src: "images/8-20/marketfish.JPG", caption: "I've been eyeing these, and they've been eyeing me" },
       
