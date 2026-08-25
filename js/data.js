@@ -12,7 +12,24 @@
 
 const entries = [
   /* next entry here */
-  
+     {
+    date: "2026-08-25",
+    location: "Taipei, Taiwan", 
+    title: "Movement 2: Allegretto",
+    text: "Back in Taipei (台北 táiběi), Fulbright Taiwan put on a show. We heard from the program director, the program's mental health coordinators, former grantees who remained in Taiwan, and prominent international educational organizations in Taiwan. Some hints of complexity here: as Taiwan and the USA have no formal diplomatic relations, there is no formally named US Embassy in Taiwan; instead, there is the American Institute in Taiwan, a Congressionally-created and administered nonprofit staffed largely by the US Department of State. But I digress.\n\nThree days of workshops and socializing in the big city taught me three things: 1) Hualien County is the right place for me 2) Fulbright Taiwan is probably the most scaffolded such program within Fulbright, if not the world 3) I love seafood. Imbibing these lessons with me were recent college graduates, public school teachers, consultants, artists, and many aspiring doctors and lawyers. The sheer number of people from the PNW in the program did not surprise me one bit. I also reflected on how easy it was for us to obtain an Alien Resident Certificate (ARC) here, and how I now suddenly have free access to art museums and can participate in the receipt lottery. Taiwan is actively recruiting foreigners to permanently relocate here, marketing the island as a family-friendly, safe new home. Experiencing a warm welcome and considering my home and host nations' contrasting attitudes toward immigration reminded me to request my ballot to vote overseas. If I can do it from here, you can do it from there!\n\nI'm getting ahead of myself again. We got school placements! I will be living in the heart of Hualien City, just a short walk from the train I will take every day to Heping Elementary School  (和平國民小學 hépíng guómínxiǎoxué) on the border of Hualien County and Yilan County to the north. On placement day, my co-teacher immediately began sending me hikes in my area, which bodes well for our working relationship! In grades 1-6, I will have 80 total students; in kindergarten, there are 14 students. I have been told the student body almost entirely belong to the Truku (or Taroko) tribe, a shared identity which is actively included in indigenous language and culture classes at school. As I learn more, I will share more! My first visit to the school may be this Thursday, and my first day teaching will be next Monday.\n\nFinally, I celebrated my birthday this weekend, surrounded by new and old friends. At 23, I am once again in my prime. Feeling grateful for the opportunity to be in this place with these people, and desperately hoping to do a good job.",
+    fontSize: "1rem", /* default; scalar value */
+    photos: [
+      { src: "images/8-25/fishvase.JPG", caption: "Ceramic fish from the National Palace Museum" },
+      { src: "images/8-25/keynote.JPG", caption: "Dr. Randall Nadeau, Executive Director of the Foundation for Scholarly Exchange, and national treasure" },
+      { src: "images/8-25/cabbage.JPG", caption: "Jadeite cabbage from the National Palace Museum, also a national treasure" },
+      { src: "images/8-25/hotelview.JPG", caption: "The view from the hotel room, complete with reflected lamps. Not pictured: tatami room and hotel onsen" },
+      { src: "images/8-25/shellceramics.JPG", caption: "Ceramic dishes embedded in large shells, National Palace Museum" },
+      { src: "images/8-25/cafesky.JPG", caption: "Kevin, Hualien City ETA, at a Taipei cafe before an awesome thunderstorm" },
+      { src: "images/8-25/locations.jpeg", caption: "The single blue bookmark in the north of Hualien is Heping" },
+      { src: "images/8-25/birthday.jpeg", caption: "Fulbright Taiwan: Hualien County (nearly complete)" },
+      { src: "images/8-25/taipeistreet.JPG", caption: "A Taipei street near to a Mainecoon cafe and tea scent shop" },
+    ]
+  },
    {
     date: "2026-08-20",
     location: "Hualien City, Taiwan", 
