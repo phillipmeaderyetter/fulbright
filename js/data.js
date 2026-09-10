@@ -23,7 +23,7 @@ const entries = [
       { src: "images/9-10/trukumosaic.jpeg", caption: "A mosaic featuring Truku warriors with traditional face tattoos on the wall of Heping's main patio, where students gather for PE, afternoon announcements, and dismissal" },
       { src: "images/9-10/phillipcat.jpeg", caption: "A friend who makes me sneeze" },
       { src: "images/9-10/raymondphillip.jpeg", caption: "A friend who does not make me sneeze" },
-      { src: "images/9-10/dragonboat.JPG", caption: "A friend who makes me sneeze" },
+      { src: "images/9-10/dragonboat.JPG", caption: "Shhh they're sleeping" },
       { src: "images/9-10/jade.JPG", caption: "What was meant to be a flower became a star, or a little dude, or just some nice curves. The beauty of the craftsmanship is that you, the audience, can decide for yourself" },
       { src: "images/9-10/stonegrind.jpeg", caption: "Raymond's process" },
       { src: "images/9-10/spider.JPG", caption: "A friend who shared her web to keep us out of the rain" },
