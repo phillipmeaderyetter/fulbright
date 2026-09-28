@@ -22,7 +22,7 @@ const entries = [
       { src: "images/9-27/taipeibrekky.JPG", caption: "Breakfast from Taipei. This post is for those who requested to see food" },
       { src: "images/9-27/onam.JPG", caption: "A meal Isabelle prepared for us to celebrate Onam, a festival celebrated in Kerala, India to mark the Maliyali new year" },
       { src: "images/9-27/guabao.JPG", caption: "The best gua bao of my trip so far. Pork belly in and veggies in a fluffy roll, half spicy and half sweet" },
-      { src: "images/9-27/stairs.jpeg", caption: "A fun challengeg I sometimes refuse on my runs around Meilunshan" },
+      { src: "images/9-27/stairs.jpeg", caption: "A fun challenge I sometimes refuse on my runs around Meilunshan" },
       { src: "images/9-27/stamps.JPG", caption: "Making good use of my journal. As a wise man once said, next up: words" },
       { src: "images/9-27/qixingtan.JPG", caption: "The view from the bus to the weaving competition" },
       { src: "images/9-27/hardhat.jpeg", caption: "Lest you think it's all fun and games, here is me during the National Disaster Prevention Day earthquake drill. I put on my serious hat for serious for business" },
